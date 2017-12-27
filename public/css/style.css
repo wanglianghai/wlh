@@ -1,0 +1,25 @@
+/* ----- 全局CSS ----- */
+body {
+    padding-top: 40px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.main-color {
+    color: aquamarine;
+}
+
+.main-color-aqua {
+    color: cadetblue;
+}
+
+/* ----- header ----- */
+i.sidebar.icon {
+    position: fixed;
+    top: 25px;
+    right: 20px;
+    color: aqua;
+    font-size: 22px;
+}
