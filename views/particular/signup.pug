@@ -5,27 +5,31 @@ include ./component/header
     form.ui.form.segment
       .field.required
         label 用户名
-        input(type='text' placeholder='用户名')
+        input(type='text' name='name' placeholder='用户名')
       .field.required
         label 密码
-        input(type='password' placeholder='密码')
+        input(type='password' name='password' placeholder='密码')
       .field.required
         label 重复密码
-        input(type='password' placeholder='重复密码')
+        input(type='password' name='repassword' placeholder='重复密码')
       .field.required
         label 性别
         .ui.selection.dropdown
-          i.dropdown.icon
+          input(type='hidden' name='gender')
           .default.text 性别
+          i.dropdown.icon
           .menu
-            .item 男
-            .item 女
-      .field.required
+            .item(data-value='m') 男
+            .item(data-value='f') 女
+      .field.required.file
         label 头像
-        input(type='file')
+        input(type='file' name='file')
       .field.required
         label 个人简介
-        textarea(rows='5' placeholder='个人简介')
-include ../footer
+        textarea(rows='5' name='sign' placeholder='个人简介')
+      .field
+        input.positive.fluid.ui.button(type='submit' value='注册')
+include script/validation
+include script/dropdown
 
 

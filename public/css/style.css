@@ -28,3 +28,10 @@ i.sidebar.icon {
 .ui.form .field label {
     color: #2c9973;
 }
+
+/* ----- signup ----- */
+.ui.form .field.file .prompt.label{
+    position: relative;
+    top: 34px;
+    right: 165px;
+}
