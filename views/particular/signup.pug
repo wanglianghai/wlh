@@ -2,7 +2,7 @@ include ./component/header
 .ui.grid
   .four.wide.column
   .eight.wide.column
-    form.ui.form.segment
+    form.ui.form.segment(method='post')
       .field.required
         label 用户名
         input(type='text' name='name' placeholder='用户名')
