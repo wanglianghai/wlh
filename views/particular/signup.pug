@@ -1,5 +1,31 @@
 include ./component/header
+.ui.grid
+  .four.wide.column
+  .eight.wide.column
+    form.ui.form.segment
+      .field.required
+        label 用户名
+        input(type='text' placeholder='用户名')
+      .field.required
+        label 密码
+        input(type='password' placeholder='密码')
+      .field.required
+        label 重复密码
+        input(type='password' placeholder='重复密码')
+      .field.required
+        label 性别
+        .ui.selection.dropdown
+          i.dropdown.icon
+          .default.text 性别
+          .menu
+            .item 男
+            .item 女
+      .field.required
+        label 头像
+        input(type='file')
+      .field.required
+        label 个人简介
+        textarea(rows='5' placeholder='个人简介')
+include ../footer
 
-.ui.form.segment
-  .field
-    .lable 用户名
+

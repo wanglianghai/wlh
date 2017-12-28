@@ -23,3 +23,8 @@ i.sidebar.icon {
     color: aqua;
     font-size: 22px;
 }
+
+/* ----- signup -----*/
+.ui.form .field label {
+    color: #2c9973;
+}
