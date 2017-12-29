@@ -16,12 +16,14 @@ body {
 }
 
 /* ----- header ----- */
-i.sidebar.icon {
+.ui.floating.dropdown.icon.button{
     position: fixed;
     top: 25px;
     right: 20px;
     color: aqua;
     font-size: 22px;
+    background: white;
+    height: 13px;
 }
 
 /* ----- signup -----*/
