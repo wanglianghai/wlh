@@ -2,7 +2,7 @@ include ./component/header
 .ui.grid
   .four.wide.column
   .eight.wide.column
-    form.ui.form.segment(method='post')
+    form.ui.form.segment(method='post' enctype='multipart/form-data')
       .field.required
         label 用户名
         input(type='text' name='name' placeholder='用户名')
@@ -23,13 +23,13 @@ include ./component/header
             .item(data-value='f') 女
       .field.required.file
         label 头像
-        input(type='file' name='file')
+        input(type='file' name='avatar')
       .field.required
         label 个人简介
         textarea(rows='5' name='sign' placeholder='个人简介')
       .field
         input.positive.fluid.ui.button(type='submit' value='注册')
-include script/validation
+//include script/validation
 include script/dropdown
 
 

@@ -12,10 +12,10 @@ script.
             },
             {
               type: 'minLength[2]',
-              prompt: '请输入2个字以上姓名'
+              prompt: '请输入1个字以上姓名'
             },
             {
-              type: 'maxLength[10]',
+              type: 'maxLength[9]',
               prompt: '请输入10个字以下姓名'
             }
           ]
@@ -55,8 +55,8 @@ script.
             }
           ]
         },
-        file: {
-          identifier: 'file',
+        avatar: {
+          identifier: 'avatar',
           rules: [
             {
               type: 'empty',
@@ -78,6 +78,5 @@ script.
           ]
         }
       },
-
       inline: true  //内联，在下面一行
     });

@@ -12,6 +12,8 @@
   "dependencies": {
     "config-lite": "^2.1.0",
     "express": "^4.16.2",
+    "express-formidable": "^1.0.0",
+    "mongolass": "^3.1.5",
     "pug": "^2.0.0-rc.4"
   }
 }
