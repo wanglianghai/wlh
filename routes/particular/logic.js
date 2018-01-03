@@ -1,7 +1,9 @@
 const fs = require('fs')
 const User = require('../../model/manipulating')
 const validation = require('../validation')
+const sha1 = require('sha1')
 
+//注册检测
 function check(req, res, user) {
   try {
     validation.validation(user)
@@ -12,7 +14,10 @@ function check(req, res, user) {
   }
 }
 
+//注册进数据库
 function indb(req, res, next,user) {
+  user.password = sha1(user.password)
+
   delete user.repassword
   User.create(user)
     .then((result) => {
@@ -36,6 +41,37 @@ function indb(req, res, next,user) {
     })
 }
 
+//登入验证
+function validate(req, res, user, userdb) {
+  if (userdb === undefined) {
+    req.flash('error', '用户名不存在')
+    res.redirect('/signin')
+    return false
+  }
+  if (sha1(user.password) !== userdb.password) {
+    req.flash('error', '密码错误')
+    res.redirect('/signin')
+    return false
+  }
+
+  return true
+}
+
+//登入进数据库
+function checkdb(req, res, next, user) {
+  User.find(user)
+    .then(result => {
+      const userdb = result[0]
+
+      if (validate(req, res, user, userdb)) {
+        req.session.user = userdb
+        res.redirect('/article')
+      }
+    })
+    .catch(e => {
+      next(e)
+    })
+}
 module.exports = {
   userindb: (req, res, next) => {
     let user = {
@@ -48,7 +84,17 @@ module.exports = {
     }
 
     check(req, res, user)
-
     indb(req, res, next,user)
+  },
+
+  checkUser: (req, res, next) => {
+    let user = {
+      name: req.fields.name,
+      password: req.fields.password
+    }
+
+    req.session.username = user.name
+
+    checkdb(req, res, next, user)
   }
 }

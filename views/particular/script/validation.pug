@@ -3,11 +3,11 @@ script.
     .form({
       on: 'blur',  //实时监听
       fields: {
-        name: {
+        name: {    //姓名不能为空，2-9
           identifier: 'name',
           rules: [
             {
-              type: 'minLength[1]',
+              type: 'empty',
               prompt: '姓名不能为空'
             },
             {
@@ -20,9 +20,13 @@ script.
             }
           ]
         },
-        password: {
+        password: { //密码不能为空，6-12
           identifier: 'password',
           rules: [
+            {
+              type: 'empty',
+              prompt: '密码不能为空'
+            },
             {
               type: 'minLength[6]',
               prompt: '密码最短为6位'
@@ -33,12 +37,12 @@ script.
             }
           ]
         },
-        repassword: {
+        repassword: { //重复密码未填，密码不一致
           identifier: 'repassword',
           rules: [
             {
-              type: 'minLength[1]',
-              prompt: '密码未填写'
+              type: 'empty',
+              prompt: '请重复密码'
             },
             {
               type: 'match[password]',
@@ -46,7 +50,7 @@ script.
             }
           ]
         },
-        gender: {
+        gender: {       //性别未选择
           identifier: 'gender',
           rules: [
             {
@@ -55,7 +59,7 @@ script.
             }
           ]
         },
-        avatar: {
+        avatar: {     //头像未选择
           identifier: 'avatar',
           rules: [
             {
@@ -64,7 +68,7 @@ script.
             }
           ]
         },
-        sign: {
+        sign: {     ////密码不能为空，1-300
           identifier: 'sign',
           rules: [
             {

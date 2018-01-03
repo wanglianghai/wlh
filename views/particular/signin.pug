@@ -1,0 +1,13 @@
+include ./component/header
+.ui.grid
+  .four.wide.column
+  .eight.wide.column
+    form.ui.form.segment(method='post')
+      .field.required
+        label 用户名
+        input(type='text' name='name' placeholder='用户名' value=`${username}`)
+      .field.required
+        label 密码
+        input(type='password' name='password' placeholder='密码')
+      input.positive.fluid.ui.button(type='submit' value='登入')
+include script/validation
