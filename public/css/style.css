@@ -19,7 +19,7 @@ body {
 .ui.floating.dropdown.icon.button{
     position: fixed;
     top: 25px;
-    right: 20px;
+    right: 38px;
     color: aqua;
     font-size: 22px;
     background: white;
@@ -36,4 +36,8 @@ body {
     position: relative;
     top: 34px;
     right: 165px;
+}
+
+.ui.message p {
+    margin: 0;
 }

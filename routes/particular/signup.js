@@ -9,7 +9,7 @@ router.get('/', (req, res) => {
 })
 
 router.post('/', (req, res, next) => {
-  const user = {
+  let user = {
     name: req.fields.name,
     password: req.fields.password,
     repassword: req.fields.repassword,
@@ -21,19 +21,30 @@ router.post('/', (req, res, next) => {
     validation.validation(user)
   } catch(e) {
     fs.unlink(req.files.avatar.path)
-    console.log(e.message)
+    req.flash('error', e.message)
     return res.redirect('/signup')
   }
 
   delete user.repassword
-  User.create(user).catch(e => {
+  User.create(user)
+    .then((result) => {
+      user = result.ops[0]
+      // 删除密码这种敏感信息，将用户信息存入 session
+      delete user.password
+      // 此 user 是插入 mongodb 后的值，包含 _id
+      req.session.user = user
+      // 消息写入 flash
+      req.flash('success', '登入成功')
+      // 跳转到首页
+      res.redirect('/article')
+    })
+    .catch(e => {
     fs.unlink(req.files.avatar.path)
     if (e.message.match('duplicate key')) {
-      console.log('用户名重复')
+      req.flash('error', '用户名重复')
       return res.redirect('/signup')
     }
     next(e)
   })
-  res.redirect('/signup')
 })
 module.exports = router

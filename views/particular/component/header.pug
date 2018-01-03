@@ -1,13 +1,37 @@
 include ../../head
+//标题
 .ui.grid
   .four.wide.column
   .eight.wide.column.text-center
     h1.main-color 我的博客
     h3.main-color-aqua 我的第一个博客
+    if success
+      .ui.positive.message
+        i.close.icon
+        p= success
+    if error
+      .ui.negative.message
+        i.close.icon
+        p= error
+//设置按钮
 .ui.floating.dropdown.icon.button
   i.sidebar.icon
-  .menu
-    .item 登入
-    .item
-      a(href='/signup') 注册
+  if user
+    .menu
+      .item 个人主页
+      .divider
+      .item 发表文章
+      .item 登出
+  else
+    .menu
+      .item 登入
+      .item
+        a(href='/signup') 注册
+script.
+  $('.message .close')
+    .on('click', function () {
+      $(this)
+        .closest('.message')
+        .transition('fade')
+    })
 include ../script/dropdown
