@@ -3,12 +3,13 @@ const express = require('express')
 const router = express.Router()
 const User = require('../../model/manipulating')
 const validation = require('../validation')
+const checkUser = require('../../middleware/check').userin
 
-router.get('/', (req, res) => {
+router.get('/', checkUser, (req, res) => {
   res.render('./particular/signup')
 })
 
-router.post('/', (req, res, next) => {
+router.post('/', checkUser, (req, res, next) => {
   let user = {
     name: req.fields.name,
     password: req.fields.password,
