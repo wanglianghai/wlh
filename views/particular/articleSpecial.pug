@@ -1,0 +1,11 @@
+include ./component/header
+if article
+  .ui.grid
+    .four.wide.column
+      include ./component/avatar
+    .eight.wide.column
+      .ui.segment
+        h3= article.title
+        p= article.content
+        span.time= `时间: ${article.createdTime}`
+        span.bottom 浏览

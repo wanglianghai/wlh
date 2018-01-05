@@ -48,3 +48,17 @@ body {
 .ui.message p {
     margin: 0;
 }
+
+/* ----- articleSpecial -----*/
+span.time {
+    position: relative;
+    top: 12px;
+    font-size: 10px;
+}
+
+span.bottom {
+    position: absolute;
+    bottom: 0;
+    left: 350px;
+    font-size: 10px;
+}
