@@ -1,7 +1,8 @@
 const fs = require('fs')
-const User = require('../../model/manipulating')
+const User = require('../../model/user')
 const validation = require('../validation')
 const sha1 = require('sha1')
+const Article = require('../../model/article')
 
 //注册检测
 function check(req, res, user) {
@@ -10,8 +11,10 @@ function check(req, res, user) {
   } catch(e) {
     fs.unlink(req.files.avatar.path)
     req.flash('error', e.message)
-    return res.redirect('/signup')
+    res.redirect('/signup')
+    return false
   }
+  return true
 }
 
 //注册进数据库
@@ -73,7 +76,7 @@ function checkdb(req, res, next, user) {
     })
 }
 module.exports = {
-  userindb: (req, res, next) => {
+  userInDb: (req, res, next) => {
     let user = {
       name: req.fields.name,
       password: req.fields.password,
@@ -83,10 +86,12 @@ module.exports = {
       sign: req.fields.sign
     }
 
-    check(req, res, user)
-    indb(req, res, next,user)
+    if (check(req, res, user)) {
+      indb(req, res, next,user)
+    }
   },
 
+  //使用了，因为那是黑的，好像就显示不出来
   checkUser: (req, res, next) => {
     let user = {
       name: req.fields.name,
@@ -96,5 +101,29 @@ module.exports = {
     req.session.username = user.name
 
     checkdb(req, res, next, user)
+  },
+
+  articleInDb: (req, res, next) => {
+    let article = {
+      author: req.session.user._id,
+      title: req.fields.title,
+      content: req.fields.content
+    }
+
+    try {
+      validation.article(article)
+    } catch (e) {
+      req.flash('error', e.message)
+      return res.redirect('/article/create')
+    }
+
+    Article.create(article)
+      .then((result) => {
+        req.flash('success', '发布成功')
+        res.redirect(`/article/`)
+      })
+      .catch((e) => {
+        next(e)
+      })
   }
 }

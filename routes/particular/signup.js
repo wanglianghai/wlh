@@ -9,6 +9,6 @@ router.get('/', checkUser, (req, res) => {
 })
 
 router.post('/', checkUser, (req, res, next) => {
-  logic.userindb(req, res, next)
+  logic.userInDb(req, res, next)
 })
 module.exports = router

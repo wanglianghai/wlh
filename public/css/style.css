@@ -15,6 +15,13 @@ body {
     color: cadetblue;
 }
 
+.avatar {
+    width: 60px;
+    height: 60px;
+    float: right;
+    border-radius: 8px;
+}
+
 /* ----- header ----- */
 .ui.floating.dropdown.icon.button{
     position: fixed;

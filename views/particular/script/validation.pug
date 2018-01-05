@@ -80,6 +80,32 @@ script.
               prompt: '个人签名最多300字'
             }
           ]
+        },
+        content: {
+          identifier: 'content',
+          rules: [
+            {
+              type: 'empty',
+              prompt: '文章内容不能为空'
+            },
+            {
+              type: 'maxLength[800]',
+              prompt: '文章内容最多800字'
+            }
+          ]
+        },
+        title: {
+          identifier: 'title',
+          rules: [
+            {
+              type: 'empty',
+              prompt: '文章标题不能为空'
+            },
+            {
+              type: 'maxLength[8]',
+              prompt: '文章标题最多8个字'
+            }
+          ]
         }
       },
       inline: true  //内联，在下面一行

@@ -1,0 +1,15 @@
+include ./component/header
+.ui.grid
+  .four.wide.column
+    img.avatar(src=`/img/${user.avatar}` data-title=`${user.name}|${user.gender === 'm' ? '男' : '女'}` data-content=`${user.sign}` data-position="bottom left")
+  .eight.wide.column
+    form.ui.form.segment(method='post')
+      .field.required
+        label 标题
+        input(type='text' name='title' placeholder='标题')
+      .field.required
+        label 内容
+        textarea(rows='15' name='content' placeholder='内容')
+      input.positive.fluid.ui.button(type='submit' value='发布')
+include ./script/popup
+include ./script/validation
