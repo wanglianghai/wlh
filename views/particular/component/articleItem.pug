@@ -1,0 +1,15 @@
+a(href=`/article/${article._id}`)
+  h3= article.title
+p= article.content
+.bottom_relative
+  span.time= `时间: ${article.createdTime}`
+  span.browse= `浏览(${article.browse})`
+  //article.author 是ObjectID。调用传的值不同
+  if article.author._id.toString() === user._id
+    span.ui.dropdown
+      i.angle.up.icon
+      .menu
+        .item 编辑
+        .item
+          a(href=`/article/${article._id}/remove`) 删除
+    include ../script/dropdown

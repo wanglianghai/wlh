@@ -51,14 +51,28 @@ body {
 
 /* ----- articleSpecial -----*/
 span.time {
-    position: relative;
-    top: 12px;
     font-size: 10px;
 }
 
-span.bottom {
-    position: absolute;
-    bottom: 0;
-    left: 350px;
+span.browse {
     font-size: 10px;
+    position: absolute;
+    right: 5em;
+}
+
+span.ui.dropdown {
+    font-size: 15px;
+    position: absolute;
+    right: 1.5em;
+}
+
+/* ----- comment -----*/
+.right_float {
+    float: right;
+}
+
+.bottom_relative {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
 }

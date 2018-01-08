@@ -3,7 +3,8 @@ include ../../head
 .ui.grid
   .four.wide.column
   .eight.wide.column.text-center
-    h1.main-color 我的博客
+    h1.main-color
+      a(href='/article/') 博客
     h3.main-color-aqua 我的第一个博客
     if success
       .ui.positive.message
@@ -18,7 +19,8 @@ include ../../head
   i.sidebar.icon
   if user
     .menu
-      .item 个人主页
+      .item
+        a(href=`/article?author=${user._id}`) 个人主页
       .divider
       .item
         a(href='/article/create') 发表文章

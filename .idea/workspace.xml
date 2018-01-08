@@ -1,7 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="fc1092f9-4a3b-43e0-8c3e-062b5bcef7a7" name="Default" comment="" />
+=======
+    <list default="true" id="fc1092f9-4a3b-43e0-8c3e-062b5bcef7a7" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/.gitignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/particular/component/articleItem.pug" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/default.js" afterPath="$PROJECT_DIR$/config/default.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/db.js" afterPath="$PROJECT_DIR$/lib/db.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/model/article.js" afterPath="$PROJECT_DIR$/model/article.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/style.css" afterPath="$PROJECT_DIR$/public/css/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/routes/particular/article" afterPath="$PROJECT_DIR$/routes/particular/article" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/routes/particular/logic.js" afterPath="$PROJECT_DIR$/routes/particular/logic.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/particular/article.pug" afterPath="$PROJECT_DIR$/views/particular/article.pug" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/particular/articleSpecial.pug" afterPath="$PROJECT_DIR$/views/particular/articleSpecial.pug" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/particular/component/avatar.pug" afterPath="$PROJECT_DIR$/views/particular/component/avatar.pug" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/particular/component/header.pug" afterPath="$PROJECT_DIR$/views/particular/component/header.pug" />
+    </list>
+>>>>>>> 0b0b1b4baadeb690fb585288b3340c73726c40ba
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -17,39 +36,55 @@
       <file leaf-file-name="logic.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/routes/particular/logic.js">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="2725">
               <caret line="169" column="23" lean-forward="false" selection-start-line="169" selection-start-column="23" selection-end-line="169" selection-end-column="23" />
+=======
+            <state relative-caret-position="1400">
+              <caret line="185" column="23" lean-forward="false" selection-start-line="185" selection-start-column="23" selection-end-line="185" selection-end-column="23" />
+>>>>>>> 0b0b1b4baadeb690fb585288b3340c73726c40ba
               <folding>
                 <element signature="n#!!block;n#checkSignin#0" expanded="false" />
                 <element signature="n#!!block;n#checkArticle#0" expanded="false" />
                 <element signature="n#!!block;n#inSinginDb#0" expanded="false" />
                 <element signature="e#1160#1349#0" expanded="false" />
+                <element signature="n#!!block;n#inArticleDb#0" expanded="false" />
                 <element signature="n#!!block;n#validate#0" expanded="false" />
+                <element signature="n#!!block;n#checkdb#0" expanded="false" />
+                <element signature="e#2424#2811#0" expanded="false" />
+                <element signature="e#2871#3037#0" expanded="false" />
+                <element signature="e#3102#3380#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="article.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/model/article.js">
+      <file leaf-file-name="article.pug" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/particular/article.pug">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="125">
               <caret line="5" column="2" lean-forward="false" selection-start-line="5" selection-start-column="2" selection-end-line="6" selection-end-column="69" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="user.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/model/user.js">
-          <provider selected="true" editor-type-id="text-editor">
+=======
             <state relative-caret-position="100">
-              <caret line="4" column="32" lean-forward="false" selection-start-line="3" selection-start-column="2" selection-end-line="4" selection-end-column="32" />
+              <caret line="4" column="24" lean-forward="false" selection-start-line="4" selection-start-column="4" selection-end-line="5" selection-end-column="32" />
+>>>>>>> 0b0b1b4baadeb690fb585288b3340c73726c40ba
               <folding />
             </state>
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="header.pug" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/particular/component/header.pug">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="57">
+              <caret line="41" column="22" lean-forward="true" selection-start-line="41" selection-start-column="22" selection-end-line="41" selection-end-column="22" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+<<<<<<< HEAD
       <file leaf-file-name="db.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/db.js">
           <provider selected="true" editor-type-id="text-editor">
@@ -65,16 +100,47 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="25">
               <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+=======
+      <file leaf-file-name="articleSpecial.pug" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/particular/articleSpecial.pug">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="200">
+              <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+>>>>>>> 0b0b1b4baadeb690fb585288b3340c73726c40ba
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="test.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/demo/test.js">
+      <file leaf-file-name="articleItem.pug" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/particular/component/articleItem.pug">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+            <state relative-caret-position="175">
+              <caret line="7" column="19" lean-forward="true" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="12" lean-forward="false" selection-start-line="0" selection-start-column="12" selection-end-line="0" selection-end-column="12" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+<<<<<<< HEAD
+      <file leaf-file-name="articleSpecial.pug" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/particular/articleSpecial.pug">
+=======
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/public/img/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="3" selection-end-column="8" />
               <folding />
             </state>
           </provider>
@@ -82,39 +148,30 @@
       </file>
       <file leaf-file-name="default.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config/default.js">
+>>>>>>> 0b0b1b4baadeb690fb585288b3340c73726c40ba
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="100">
-              <caret line="4" column="35" lean-forward="true" selection-start-line="4" selection-start-column="35" selection-end-line="4" selection-end-column="35" />
+            <state relative-caret-position="25">
+              <caret line="1" column="12" lean-forward="false" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="12" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="articleSpecial.pug" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/particular/articleSpecial.pug">
+      <file leaf-file-name="avatar.pug" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/particular/component/avatar.pug">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="9" column="24" lean-forward="false" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
+            <state relative-caret-position="0">
+              <caret line="0" column="30" lean-forward="false" selection-start-line="0" selection-start-column="30" selection-end-line="0" selection-end-column="30" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="articleCreate.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/routes/particular/articleCreate.js">
+      <file leaf-file-name="article" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/routes/particular/article">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="325">
-              <caret line="13" column="16" lean-forward="false" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="16" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="check.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/middleware/check.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="350">
-              <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+            <state relative-caret-position="450">
+              <caret line="18" column="37" lean-forward="true" selection-start-line="18" selection-start-column="8" selection-end-line="18" selection-end-column="37" />
               <folding />
             </state>
           </provider>
@@ -141,21 +198,17 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/package.json" />
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/views/signup.pug" />
         <option value="$PROJECT_DIR$/views/head.pug" />
         <option value="$PROJECT_DIR$/views/footer.pug" />
         <option value="$PROJECT_DIR$/views/validation.pug" />
         <option value="$PROJECT_DIR$/views/particular/script/dropdown.pug" />
         <option value="$PROJECT_DIR$/index.js" />
-        <option value="$PROJECT_DIR$/config/default.js" />
         <option value="$PROJECT_DIR$/middleware/checkuser.js" />
         <option value="$PROJECT_DIR$/routes/particular/login.js" />
         <option value="$PROJECT_DIR$/routes/index.js" />
         <option value="$PROJECT_DIR$/views/particular/signin.pug" />
         <option value="$PROJECT_DIR$/routes/particular/signin.js" />
-        <option value="$PROJECT_DIR$/views/particular/article.pug" />
-        <option value="$PROJECT_DIR$/views/particular/component/header.pug" />
         <option value="$PROJECT_DIR$/views/particular/script/popup.pug" />
         <option value="$PROJECT_DIR$/views/particular/script/validation.pug" />
         <option value="$PROJECT_DIR$/routes/validation.js" />
@@ -167,17 +220,23 @@
         <option value="$PROJECT_DIR$/model/Article.js" />
         <option value="$PROJECT_DIR$/routes/particular/signup.js" />
         <option value="$PROJECT_DIR$/views/particular/articleCreate.pug" />
-        <option value="$PROJECT_DIR$/views/particular/component/avatar.pug" />
         <option value="$PROJECT_DIR$/routes/particular/articleCreate.js" />
-        <option value="$PROJECT_DIR$/routes/particular/logic.js" />
-        <option value="$PROJECT_DIR$/routes/particular/article" />
         <option value="$PROJECT_DIR$/routes/particular/signout.js" />
         <option value="$PROJECT_DIR$/middleware/check.js" />
         <option value="$PROJECT_DIR$/test.js" />
-        <option value="$PROJECT_DIR$/model/article.js" />
-        <option value="$PROJECT_DIR$/public/css/style.css" />
-        <option value="$PROJECT_DIR$/views/particular/articleSpecial.pug" />
         <option value="$PROJECT_DIR$/lib/db.js" />
+        <option value="$PROJECT_DIR$/views/particular/component/avatar.pug" />
+        <option value="$PROJECT_DIR$/views/particular/articleSpecial.pug" />
+        <option value="$PROJECT_DIR$/views/particular/component/header.pug" />
+        <option value="$PROJECT_DIR$/public/css/style.css" />
+        <option value="$PROJECT_DIR$/routes/particular/article" />
+        <option value="$PROJECT_DIR$/model/article.js" />
+        <option value="$PROJECT_DIR$/routes/particular/logic.js" />
+        <option value="$PROJECT_DIR$/views/particular/article.pug" />
+        <option value="$PROJECT_DIR$/config/default.js" />
+        <option value="$PROJECT_DIR$/views/particular/component/articleItem.pug" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/public/img/.gitignore" />
       </list>
     </option>
   </component>
@@ -198,11 +257,11 @@
   <component name="NodeModulesDirectoryManager">
     <handled-path value="$PROJECT_DIR$/node_modules" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="443" />
-    <option name="y" value="216" />
-    <option name="width" value="1227" />
-    <option name="height" value="992" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="715" />
+    <option name="y" value="24" />
+    <option name="width" value="648" />
+    <option name="height" value="736" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -291,88 +350,91 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+<<<<<<< HEAD
       <pane id="Scope" />
+=======
+>>>>>>> 0b0b1b4baadeb690fb585288b3340c73726c40ba
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="wlhblog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="wlhblog" type="462c0819:PsiDirectoryNode" />
+              <item name="wlh" type="b2602c69:ProjectViewProjectNode" />
+              <item name="wlh" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="wlhblog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="wlhblog" type="462c0819:PsiDirectoryNode" />
+              <item name="wlh" type="b2602c69:ProjectViewProjectNode" />
+              <item name="wlh" type="462c0819:PsiDirectoryNode" />
               <item name="config" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="wlhblog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="wlhblog" type="462c0819:PsiDirectoryNode" />
+              <item name="wlh" type="b2602c69:ProjectViewProjectNode" />
+              <item name="wlh" type="462c0819:PsiDirectoryNode" />
               <item name="demo" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="wlhblog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="wlhblog" type="462c0819:PsiDirectoryNode" />
+              <item name="wlh" type="b2602c69:ProjectViewProjectNode" />
+              <item name="wlh" type="462c0819:PsiDirectoryNode" />
               <item name="lib" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="wlhblog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="wlhblog" type="462c0819:PsiDirectoryNode" />
+              <item name="wlh" type="b2602c69:ProjectViewProjectNode" />
+              <item name="wlh" type="462c0819:PsiDirectoryNode" />
               <item name="middleware" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="wlhblog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="wlhblog" type="462c0819:PsiDirectoryNode" />
+              <item name="wlh" type="b2602c69:ProjectViewProjectNode" />
+              <item name="wlh" type="462c0819:PsiDirectoryNode" />
               <item name="model" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="wlhblog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="wlhblog" type="462c0819:PsiDirectoryNode" />
+              <item name="wlh" type="b2602c69:ProjectViewProjectNode" />
+              <item name="wlh" type="462c0819:PsiDirectoryNode" />
               <item name="public" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="wlhblog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="wlhblog" type="462c0819:PsiDirectoryNode" />
+              <item name="wlh" type="b2602c69:ProjectViewProjectNode" />
+              <item name="wlh" type="462c0819:PsiDirectoryNode" />
               <item name="public" type="462c0819:PsiDirectoryNode" />
               <item name="css" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="wlhblog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="wlhblog" type="462c0819:PsiDirectoryNode" />
+              <item name="wlh" type="b2602c69:ProjectViewProjectNode" />
+              <item name="wlh" type="462c0819:PsiDirectoryNode" />
               <item name="public" type="462c0819:PsiDirectoryNode" />
               <item name="img" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="wlhblog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="wlhblog" type="462c0819:PsiDirectoryNode" />
+              <item name="wlh" type="b2602c69:ProjectViewProjectNode" />
+              <item name="wlh" type="462c0819:PsiDirectoryNode" />
               <item name="routes" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="wlhblog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="wlhblog" type="462c0819:PsiDirectoryNode" />
+              <item name="wlh" type="b2602c69:ProjectViewProjectNode" />
+              <item name="wlh" type="462c0819:PsiDirectoryNode" />
               <item name="routes" type="462c0819:PsiDirectoryNode" />
               <item name="particular" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="wlhblog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="wlhblog" type="462c0819:PsiDirectoryNode" />
+              <item name="wlh" type="b2602c69:ProjectViewProjectNode" />
+              <item name="wlh" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="wlhblog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="wlhblog" type="462c0819:PsiDirectoryNode" />
+              <item name="wlh" type="b2602c69:ProjectViewProjectNode" />
+              <item name="wlh" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
               <item name="particular" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="wlhblog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="wlhblog" type="462c0819:PsiDirectoryNode" />
+              <item name="wlh" type="b2602c69:ProjectViewProjectNode" />
+              <item name="wlh" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
               <item name="particular" type="462c0819:PsiDirectoryNode" />
               <item name="component" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="wlhblog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="wlhblog" type="462c0819:PsiDirectoryNode" />
+              <item name="wlh" type="b2602c69:ProjectViewProjectNode" />
+              <item name="wlh" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
               <item name="particular" type="462c0819:PsiDirectoryNode" />
               <item name="script" type="462c0819:PsiDirectoryNode" />
@@ -382,6 +444,10 @@
         </subPane>
       </pane>
       <pane id="Scratches" />
+<<<<<<< HEAD
+=======
+      <pane id="Scope" />
+>>>>>>> 0b0b1b4baadeb690fb585288b3340c73726c40ba
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -390,6 +456,7 @@
     <property name="settings.editor.selected.configurable" value="Settings.JavaScript" />
     <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
+    <property name="nodejs_interpreter_path" value="/usr/local/bin/node" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -437,26 +504,47 @@
       <workItem from="1514969234654" duration="11424000" />
       <workItem from="1515118522322" duration="233000" />
       <workItem from="1515118849950" duration="19339000" />
+      <workItem from="1515299367902" duration="922000" />
+      <workItem from="1515300579259" duration="10231000" />
+      <workItem from="1515319261662" duration="1743000" />
+      <workItem from="1515322402500" duration="4369000" />
+      <workItem from="1515373132201" duration="2372000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< HEAD
     <option name="totallyTimeSpent" value="112836000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="64" y="-11" width="1857" height="1092" extended-state="6" />
+=======
+    <option name="totallyTimeSpent" value="132196000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="715" y="24" width="648" height="736" extended-state="0" />
+    <editor active="true" />
+>>>>>>> 0b0b1b4baadeb690fb585288b3340c73726c40ba
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1870229" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.55698234" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+<<<<<<< HEAD
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+=======
+>>>>>>> 0b0b1b4baadeb690fb585288b3340c73726c40ba
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+<<<<<<< HEAD
       <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2546973" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+=======
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5368917" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+>>>>>>> 0b0b1b4baadeb690fb585288b3340c73726c40ba
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -468,10 +556,15 @@
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2546973" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+<<<<<<< HEAD
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1870229" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+=======
+      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32967034" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+>>>>>>> 0b0b1b4baadeb690fb585288b3340c73726c40ba
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -484,24 +577,12 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/views/particular/signup.pug">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="25">
-          <caret line="1" column="26" lean-forward="false" selection-start-line="1" selection-start-column="26" selection-end-line="1" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/particular/component/header.pug">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="325">
@@ -618,21 +699,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/img/upload_68173d27cc02a9e7bb11b1492365df1d.png" />
     <entry file="file://$PROJECT_DIR$/public/img/upload_a9d0f5e221ca30ec16bf36312a778692.png" />
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="500">
-          <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="50">
-          <caret line="2" column="17" lean-forward="false" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="392">
@@ -644,13 +710,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
           <caret line="9" column="6" lean-forward="true" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/particular/component/header.pug">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="23" column="31" lean-forward="false" selection-start-line="23" selection-start-column="31" selection-end-line="23" selection-end-column="31" />
         </state>
       </provider>
     </entry>
@@ -668,27 +727,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/particular/signin.pug">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="12" column="14" lean-forward="false" selection-start-line="12" selection-start-column="14" selection-end-line="12" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/particular/signup.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="11" column="32" lean-forward="false" selection-start-line="11" selection-start-column="32" selection-end-line="11" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/particular/script/dropdown.pug">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="25">
-          <caret line="1" column="22" lean-forward="false" selection-start-line="1" selection-start-column="22" selection-end-line="1" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/views/particular/script/validation.pug">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="589">
@@ -699,12 +737,67 @@
     <entry file="file://$PROJECT_DIR$/views/particular/script/popup.pug">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
+<<<<<<< HEAD
+          <caret line="12" column="14" lean-forward="false" selection-start-line="12" selection-start-column="14" selection-end-line="12" selection-end-column="14" />
+=======
           <caret line="0" column="7" lean-forward="true" selection-start-line="0" selection-start-column="7" selection-end-line="0" selection-end-column="7" />
+>>>>>>> 0b0b1b4baadeb690fb585288b3340c73726c40ba
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/particular/component/avatar.pug">
+    <entry file="file://$PROJECT_DIR$/routes/particular/articleSpecial.js" />
+    <entry file="file://$PROJECT_DIR$/routes/index.js">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state relative-caret-position="275">
+          <caret line="11" column="32" lean-forward="false" selection-start-line="11" selection-start-column="32" selection-end-line="11" selection-end-column="32" />
+=======
+        <state relative-caret-position="325">
+          <caret line="13" column="4" lean-forward="false" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="4" />
+>>>>>>> 0b0b1b4baadeb690fb585288b3340c73726c40ba
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test.js">
+      <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state relative-caret-position="25">
+          <caret line="1" column="22" lean-forward="false" selection-start-line="1" selection-start-column="22" selection-end-line="1" selection-end-column="22" />
+=======
+        <state relative-caret-position="75">
+          <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+>>>>>>> 0b0b1b4baadeb690fb585288b3340c73726c40ba
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state relative-caret-position="589">
+          <caret line="97" column="28" lean-forward="false" selection-start-line="97" selection-start-column="28" selection-end-line="97" selection-end-column="28" />
+=======
+        <state relative-caret-position="164">
+          <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+          <folding />
+>>>>>>> 0b0b1b4baadeb690fb585288b3340c73726c40ba
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo/test.js">
+      <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state relative-caret-position="0">
+          <caret line="0" column="7" lean-forward="true" selection-start-line="0" selection-start-column="7" selection-end-line="0" selection-end-column="7" />
+=======
+        <state relative-caret-position="375">
+          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+>>>>>>> 0b0b1b4baadeb690fb585288b3340c73726c40ba
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/middleware/check.js">
+      <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="25">
           <caret line="1" column="23" lean-forward="true" selection-start-line="1" selection-start-column="23" selection-end-line="1" selection-end-column="23" />
         </state>
@@ -712,17 +805,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/routes/particular/articleSpecial.js" />
     <entry file="file://$PROJECT_DIR$/views/particular/article.pug">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="25">
-          <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="13" column="4" lean-forward="false" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="4" />
+=======
+        <state relative-caret-position="350">
+          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -733,53 +818,91 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/routes/particular/signin.js">
+    <entry file="file://$PROJECT_DIR$/routes/particular/signup.js">
+>>>>>>> 0b0b1b4baadeb690fb585288b3340c73726c40ba
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="16" column="23" lean-forward="true" selection-start-line="16" selection-start-column="23" selection-end-line="16" selection-end-column="23" />
+        <state relative-caret-position="275">
+          <caret line="11" column="32" lean-forward="false" selection-start-line="11" selection-start-column="32" selection-end-line="11" selection-end-column="32" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test.js">
+    <entry file="file://$PROJECT_DIR$/views/particular/signin.pug">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state relative-caret-position="325">
+          <caret line="13" column="4" lean-forward="false" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="4" />
+=======
+        <state relative-caret-position="291">
+          <caret line="12" column="14" lean-forward="false" selection-start-line="12" selection-start-column="14" selection-end-line="12" selection-end-column="14" />
+>>>>>>> 0b0b1b4baadeb690fb585288b3340c73726c40ba
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model/user.js">
+      <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state relative-caret-position="175">
+          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+=======
+        <state relative-caret-position="100">
+          <caret line="4" column="32" lean-forward="false" selection-start-line="3" selection-start-column="2" selection-end-line="4" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/db.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="13" column="0" lean-forward="true" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+>>>>>>> 0b0b1b4baadeb690fb585288b3340c73726c40ba
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/particular/signin.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+<<<<<<< HEAD
+          <caret line="16" column="23" lean-forward="true" selection-start-line="16" selection-start-column="23" selection-end-line="16" selection-end-column="23" />
+=======
+          <caret line="16" column="23" lean-forward="false" selection-start-line="16" selection-start-column="23" selection-end-line="16" selection-end-column="23" />
+>>>>>>> 0b0b1b4baadeb690fb585288b3340c73726c40ba
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/particular/script/dropdown.pug">
+      <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="75">
           <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+=======
+        <state relative-caret-position="25">
+          <caret line="1" column="16" lean-forward="false" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="16" />
+>>>>>>> 0b0b1b4baadeb690fb585288b3340c73726c40ba
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/particular/articleCreate.pug">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="250">
           <caret line="10" column="16" lean-forward="false" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/particular/article">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="50">
-          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+=======
+        <state relative-caret-position="325">
+          <caret line="13" column="27" lean-forward="false" selection-start-line="13" selection-start-column="27" selection-end-line="13" selection-end-column="27" />
+          <folding />
+>>>>>>> 0b0b1b4baadeb690fb585288b3340c73726c40ba
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="369">
-          <caret line="60" column="13" lean-forward="false" selection-start-line="60" selection-start-column="13" selection-end-line="60" selection-end-column="13" />
+<<<<<<< HEAD
+        <state relative-caret-position="50">
+          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+=======
+        <state relative-caret-position="1625">
+          <caret line="65" column="18" lean-forward="false" selection-start-line="65" selection-start-column="18" selection-end-line="65" selection-end-column="18" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/particular/logic.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2725">
-          <caret line="169" column="23" lean-forward="false" selection-start-line="169" selection-start-column="23" selection-end-line="169" selection-end-column="23" />
-          <folding>
-            <element signature="n#!!block;n#checkSignin#0" expanded="false" />
-            <element signature="n#!!block;n#checkArticle#0" expanded="false" />
-            <element signature="n#!!block;n#inSinginDb#0" expanded="false" />
-            <element signature="e#1160#1349#0" expanded="false" />
-            <element signature="n#!!block;n#validate#0" expanded="false" />
-          </folding>
+>>>>>>> 0b0b1b4baadeb690fb585288b3340c73726c40ba
         </state>
       </provider>
     </entry>
@@ -791,58 +914,116 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/particular/articleSpecial.pug">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="9" column="24" lean-forward="false" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/middleware/check.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/model/user.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="4" column="32" lean-forward="false" selection-start-line="3" selection-start-column="2" selection-end-line="4" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/model/article.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="5" column="2" lean-forward="false" selection-start-line="5" selection-start-column="2" selection-end-line="6" selection-end-column="69" />
+        <state relative-caret-position="1175">
+          <caret line="47" column="17" lean-forward="false" selection-start-line="47" selection-start-column="17" selection-end-line="47" selection-end-column="17" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/demo/test.js">
+    <entry file="file://$PROJECT_DIR$/routes/particular/logic.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+<<<<<<< HEAD
+        <state relative-caret-position="2725">
+          <caret line="169" column="23" lean-forward="false" selection-start-line="169" selection-start-column="23" selection-end-line="169" selection-end-column="23" />
+=======
+        <state relative-caret-position="1400">
+          <caret line="185" column="23" lean-forward="false" selection-start-line="185" selection-start-column="23" selection-end-line="185" selection-end-column="23" />
+>>>>>>> 0b0b1b4baadeb690fb585288b3340c73726c40ba
+          <folding>
+            <element signature="n#!!block;n#checkSignin#0" expanded="false" />
+            <element signature="n#!!block;n#checkArticle#0" expanded="false" />
+            <element signature="n#!!block;n#inSinginDb#0" expanded="false" />
+            <element signature="e#1160#1349#0" expanded="false" />
+            <element signature="n#!!block;n#inArticleDb#0" expanded="false" />
+            <element signature="n#!!block;n#validate#0" expanded="false" />
+            <element signature="n#!!block;n#checkdb#0" expanded="false" />
+            <element signature="e#2424#2811#0" expanded="false" />
+            <element signature="e#2871#3037#0" expanded="false" />
+            <element signature="e#3102#3380#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/particular/article">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="18" column="37" lean-forward="true" selection-start-line="18" selection-start-column="8" selection-end-line="18" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/particular/articleSpecial.pug">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/particular/component/avatar.pug">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="30" lean-forward="false" selection-start-line="0" selection-start-column="30" selection-end-line="0" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/particular/article.pug">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="4" column="24" lean-forward="false" selection-start-line="4" selection-start-column="4" selection-end-line="5" selection-end-column="32" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/config/default.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="4" column="35" lean-forward="true" selection-start-line="4" selection-start-column="35" selection-end-line="4" selection-end-column="35" />
+<<<<<<< HEAD
+        <state relative-caret-position="125">
+          <caret line="5" column="2" lean-forward="false" selection-start-line="5" selection-start-column="2" selection-end-line="6" selection-end-column="69" />
+=======
+        <state relative-caret-position="25">
+          <caret line="1" column="12" lean-forward="false" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="12" />
+>>>>>>> 0b0b1b4baadeb690fb585288b3340c73726c40ba
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/db.js">
+    <entry file="file://$PROJECT_DIR$/views/particular/component/header.pug">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="41" column="22" lean-forward="true" selection-start-line="41" selection-start-column="22" selection-end-line="41" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/particular/component/articleItem.pug">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="7" column="19" lean-forward="true" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="12" lean-forward="false" selection-start-line="0" selection-start-column="12" selection-end-line="0" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/img/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="584">
           <caret line="38" column="25" lean-forward="false" selection-start-line="38" selection-start-column="25" selection-end-line="38" selection-end-column="25" />
+=======
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="3" selection-end-column="8" />
+>>>>>>> 0b0b1b4baadeb690fb585288b3340c73726c40ba
           <folding />
         </state>
       </provider>
