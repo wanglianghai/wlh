@@ -1,2 +1,3 @@
-img.avatar(src=`/img/${user.avatar}` data-title=`${user.name}|${user.gender === 'm' ? '男' : '女'}` data-content=`${user.sign}` data-position="bottom left")
+a(href=`/article?author=${user._id}`)
+  img.avatar(src=`/img/${user.avatar}` data-title=`${user.name}|${user.gender === 'm' ? '男' : '女'}` data-content=`${user.sign}` data-position="bottom left")
 include ../script/popup

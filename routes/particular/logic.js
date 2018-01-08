@@ -161,8 +161,9 @@ module.exports = {
   },
 
   //查找成功返回true，失败重定向到文章页返回false
-  articleFind:  (req, res, next) => {
+  articleFind: (req, res, next) => {
     const id = req.params.id
+    Article.addBrowse(id)
     Article.find(id)
       .then(result => {
         const article = result[0]
@@ -174,6 +175,46 @@ module.exports = {
       })
       .catch(e => {
         next(e)
+      })
+  },
+
+  //文章页展示
+  article: (req, res, next) => {
+    const id = req.query.author
+
+    Article.findArticle(id)
+      .then(result => {
+        res.render('./particular/article', {articles: result})
+      })
+      .catch(e => {
+        next(e)
+      })
+  },
+
+  //文章删除
+  articleDelete: (req, res, next) => {
+    const id = req.params.id
+    const user = req.session.user._id
+
+    Article.find(id)
+      .then(result => {
+        const article = result[0]
+        if (!article) {
+          throw Error('文章不存在')
+        }
+
+        if (user !== article.author.toString()) {
+          throw Error('权限不足')
+        }
+        Article.delete(id)
+          .then(() => {
+            req.flash('success', '删除文章成功')
+            res.redirect('/article')
+          })
+          .catch(e => {
+            next(e)
+          })
+
       })
   }
 }

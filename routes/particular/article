@@ -3,8 +3,8 @@ const router = express.Router()
 const logic = require('./logic')
 
 //文章页 /article
-router.get('/', (req, res) => {
-  res.render('./particular/article')
+router.get('/', (req, res, next) => {
+  logic.article(req, res, next)
 })
 
 router.use('/create', require('./articleCreate'))
@@ -14,6 +14,10 @@ router.get('/:id', (req, res, next) => {
   logic.articleFind(req, res, next)
 })
 
+//删除一篇文章 POST /article/:id/remove
+router.get('/:id/remove', (req, res, next) => {
+  logic.articleDelete(req, res, next)
+})
 
 
 module.exports = router

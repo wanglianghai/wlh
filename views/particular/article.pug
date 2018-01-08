@@ -1,1 +1,9 @@
 include ./component/header
+for article in articles
+  .ui.grid
+    .four.wide.column
+    //- const user = article.author
+    //include ./component/avatar
+    .eight.wide.column
+      .ui.segment
+        include ./component/articleItem
