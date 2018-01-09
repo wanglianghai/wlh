@@ -1,14 +1,15 @@
 include ./component/header
 .ui.grid
   .four.wide.column
-    include ./component/avatar
+    - const usera = user
+      include ./component/avatar
   .eight.wide.column
     form.ui.form.segment(method='post')
       .field.required
         label 标题
-        input(type='text' name='title' placeholder='标题')
+        input(type='text' name='title' placeholder='标题' value=`${article ? article.title : ''}`)
       .field.required
         label 内容
-        textarea(rows='15' name='content' placeholder='内容')
+        textarea(rows='15' name='content' placeholder='内容')= article ? article.content : ''
       input.positive.fluid.ui.button(type='submit' value='发布')
 include ./script/validation

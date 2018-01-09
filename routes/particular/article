@@ -11,7 +11,7 @@ router.use('/create', require('./articleCreate'))
 
 //查看指定的一篇文章 GET /article/：id
 router.get('/:id', (req, res, next) => {
-  logic.articleFind(req, res, next)
+  logic.articleFind(req, res, next, './particular/articleSpecial')
 })
 
 //删除一篇文章 POST /article/:id/remove
@@ -19,8 +19,13 @@ router.get('/:id/remove', (req, res, next) => {
   logic.articleDelete(req, res, next)
 })
 
+//编辑一篇文章页 GET /article/:id/edit
+router.get('/:id/edit', (req, res, next) => {
+  logic.articleFind(req, res, next, './particular/articleCreate')
+})
+
 //编辑一篇文章 POST /article/:id/edited
-router.get('/:id/remove', (req, res, next) => {
+router.post('/:id/edit', (req, res, next) => {
   logic.articleEdited(req, res, next)
 })
 

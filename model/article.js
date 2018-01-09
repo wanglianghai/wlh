@@ -22,7 +22,8 @@ Article.plugin('addCreatedTime', {
 
 Article.plugin('addColumnBrowse', {
   beforeInsert: function () {
-    this._args[0].browse = 0
+    if (this._args[0].browse === undefined)
+      this._args[0].browse = 0
   }
 })
 
@@ -41,11 +42,12 @@ module.exports = {
     return Article.find(query).populate({path: 'author', model: 'User'}).addCreatedTime('YYYY-MM-DD HH:mm').sort({_id: -1}).exec()
   },
 
-  addBrowse: (id) => {
-    Article.updateOne({_id: id}, {$inc:{browse: 1}}).exec()
-  },
+  addBrowse: (id) =>
+    Article.updateOne({_id: id}, {$inc:{browse: 1}}).exec(),
 
   delete: (id) =>
-    Article.remove({_id: id}).exec()
+    Article.remove({_id: id}).exec(),
 
+  update: (id, data) =>
+    Article.updateOne({_id: id}, {$set: data}).exec()
 }

@@ -61,10 +61,10 @@ function inSinginDb(req, res, next, user) {
 }
 
 //文章进数据库：成功重定向到发布成功界面返回true，失败返回false
-function inArticleDb(req, res, next, article) {
-  Article.create(article)
+function inArticleDb(req, res, next, article, dbOperation, idU = undefined) {
+  dbOperation
     .then((result) => {
-      const id = result.ops[0]._id
+      const id = idU || result.ops[0]._id
       req.flash('success', '发布成功')
       res.redirect(`/article/${id}`)
       return true
@@ -111,6 +111,39 @@ function checkdb(req, res, next, user) {
   return false
 }
 
+function check(article, user) {
+  if (!article) {
+    throw Error('文章不存在')
+  }
+
+  if (user !== article.author._id.toString()) {
+    throw Error('权限不足')
+  }
+}
+
+function articleInDb(req, res, next, id) {
+  let dbOperation
+  let article = {
+    author: req.session.user._id,
+    title: req.fields.title,
+    content: req.fields.content
+  }
+
+  if (id) {
+    dbOperation = Article.update(id, article)
+  } else {
+    dbOperation = Article.create(article)
+  }
+
+  if (checkArticle(req, res, article)) {
+    if (inArticleDb(req, res, next, article, dbOperation, id)) {
+      return true
+    }
+  }
+
+  return false
+}
+
 module.exports = {
   userInDb: (req, res, next) => {
     let user = {
@@ -144,26 +177,11 @@ module.exports = {
   },
 
   //存入成功返回true，　else false
-  articleInDb: (req, res, next) => {
-    let article = {
-      author: req.session.user._id,
-      title: req.fields.title,
-      content: req.fields.content
-    }
-
-    if (checkArticle(req, res, article)) {
-      if (inArticleDb(req, res, next, article)) {
-        return true
-      }
-    }
-
-    return false
-  },
+  articleInDb: articleInDb,
 
   //查找成功返回true，失败重定向到文章页返回false
-  articleFind: (req, res, next) => {
+  articleFind: (req, res, next, view) => {
     const id = req.params.id
-    Article.addBrowse(id)
     Article.find(id)
       .then(result => {
         const article = result[0]
@@ -171,7 +189,14 @@ module.exports = {
         if (!article) {
           error = '找不到此文章'
         }
-        res.render('./particular/articleSpecial', {article: article, error: error})
+        article.browse++
+        Article.addBrowse(id)
+          .then(() => {
+            res.render(view, {article: article, error: error})
+          })
+          .catch(e => {
+            next(e)
+          })
       })
       .catch(e => {
         next(e)
@@ -199,13 +224,9 @@ module.exports = {
     Article.find(id)
       .then(result => {
         const article = result[0]
-        if (!article) {
-          throw Error('文章不存在')
-        }
 
-        if (user !== article.author.toString()) {
-          throw Error('权限不足')
-        }
+        check(article, user)
+
         Article.delete(id)
           .then(() => {
             req.flash('success', '删除文章成功')
@@ -216,10 +237,27 @@ module.exports = {
           })
 
       })
+      .catch(e => {
+        next(e)
+      })
   },
 
   //文章编辑
   articleEdited: (req, res, next) => {
+    const id = req.params.id
+    const user = req.session.user._id
 
+    Article.find(id)
+      .then(result => {
+        const article = result[0]
+
+        check(article, user)
+
+        articleInDb(req, res, next, article._id)
+      })
+      //没抓捕错误就不会显示
+      .catch(e => {
+        next(e)
+      })
   }
 }
